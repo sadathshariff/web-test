@@ -23,13 +23,12 @@ export const Box = () => {
       document.removeEventListener("keyup", escFunction);
     };
   }, []);
-  const trackPos = (data) => {
+  const trackPositionOfBox = (data) => {
     dispatch({
       type: "FLOATING",
       payload: { x: data.x, y: data.y },
     });
   };
-  console.log(position);
 
   return (
     <div className="main-container">
@@ -39,7 +38,7 @@ export const Box = () => {
             bounds="body"
             defaultPosition={position}
             position={state.positionCordinates}
-            onDrag={(e, data) => trackPos(data)}
+            onDrag={(data) => trackPositionOfBox(data)}
             onStop={() => setShowPosition(state.positionCordinates)}
           >
             <div className="draggable-box">
