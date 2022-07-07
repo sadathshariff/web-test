@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--black-color);
+  color: var(--off-white);
+  width: 100%;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+.position-container {
+  padding: 0 5px;
+}
+.input-checkboxes > label {
+  margin: 0 5px;
+  font-size: 1.1rem;
+}
+.info-div {
+  padding: 0 1rem;
+}
+.info-text {
+  padding: 0 1.5rem;
+  color: var(--primary-color);
+}
+.time {
+  font-size: 1.2rem;
+}
