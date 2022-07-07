@@ -38,7 +38,7 @@ export const Box = () => {
             bounds="body"
             defaultPosition={position}
             position={state.positionCordinates}
-            onDrag={(data) => trackPositionOfBox(data)}
+            onDrag={(e, data) => trackPositionOfBox(data)}
             onStop={() => setShowPosition(state.positionCordinates)}
           >
             <div className="draggable-box">
