@@ -6,7 +6,10 @@ export const InfoPage = () => {
   const { dispatch } = usePosition();
   const handleBackToMain = () => {
     navigate("/");
-    dispatch({ type: "CENTER_POSITION", payload: "center-position" });
+    dispatch({
+      type: "CENTER_POSITION",
+      payload: { value: "center-position", showBorder: true },
+    });
   };
   return (
     <>

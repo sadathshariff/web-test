@@ -31,17 +31,19 @@ export const Box = () => {
   };
 
   return (
-    <div className="main-container">
+    <>
       {showBox && (
-        <div className={`${state.positionClass}`}>
+        <div className={`${state.positionClass} `}>
           <Draggable
-            bounds="body"
+            bounds="parent"
             defaultPosition={position}
             position={state.positionCordinates}
             onDrag={(e, data) => trackPositionOfBox(data)}
             onStop={() => setShowPosition(state.positionCordinates)}
           >
-            <div className="draggable-box">
+            <div
+              className={`${state.showBorder && "box-border"} draggable-box`}
+            >
               <p className="position-text">
                 {state.positionClass === "FLOATING"
                   ? "Floating"
@@ -54,6 +56,6 @@ export const Box = () => {
           </Draggable>
         </div>
       )}
-    </div>
+    </>
   );
 };

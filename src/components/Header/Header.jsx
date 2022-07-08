@@ -33,7 +33,10 @@ export const Header = () => {
               value="center-position"
               checked={state.positionClass === "center-position"}
               onChange={(e) =>
-                dispatch({ type: "CENTER_POSITION", payload: e.target.value })
+                dispatch({
+                  type: "CENTER_POSITION",
+                  payload: { value: e.target.value },
+                })
               }
             />
             <label htmlFor="lower-right">Lower Right</label>
