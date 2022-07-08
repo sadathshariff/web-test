@@ -6,6 +6,7 @@ const PositionProvider = ({ children }) => {
   const initialData = {
     positionClass: "center",
     positionCordinates: { x: 0, y: 0 },
+    showBorder: false,
   };
   const [state, dispatch] = useReducer(positionReducer, initialData);
   return (

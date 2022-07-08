@@ -3,8 +3,9 @@ export const positionReducer = (state, { type, payload }) => {
     case "CENTER_POSITION":
       return {
         ...state,
-        positionClass: payload,
+        positionClass: payload.value,
         positionCordinates: { x: 0, y: 0 },
+        showBorder: payload.showBorder,
       };
     case "LOWER_RIGHT":
       return {
