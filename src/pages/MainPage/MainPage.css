@@ -27,3 +27,9 @@
 .FLOATING {
   height: inherit;
 }
+
+@media screen and (max-width: 760px) {
+  .content {
+    height: 82vh;
+  }
+}
