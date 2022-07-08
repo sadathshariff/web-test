@@ -18,16 +18,17 @@ export const InfoPage = () => {
         <div className="info-content">
           <h2 className="text-center">Sadathulla Shariff</h2>
           <p>
-            FrontEnd Engineer who's passionate about building stuff. An ECE grad
-            who stayed away from coding throughout the engineering, found his
-            interest into web development when i built my first website using
-            HTML and CSS and hosted it online.It all began with that
+            Frontend Engineer who's passionate about building stuff. An ECE grad
+            who stayed away from coding throughout engineering, found his
+            interest in web development when I built my first website using HTML
+            and CSS and hosted it online. It all began with that and starting
+            building stuff during the process of learning.
           </p>
           <p>
-            During my free time i usually go out and play mostly Badminton,
-            cricket and football sometimes, recently i picked up habit of
-            reading what's happening in FrontEnd Domain, so i do spend my time
-            in exploring these things .
+            During my free time I usually go out and play Badminton, sometimes
+            cricket and football, recently I picked up the habit of reading
+            what's happening in Frontend Domain, so I do spend my time exploring
+            these things.
           </p>
         </div>
 
