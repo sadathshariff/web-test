@@ -1,11 +1,14 @@
 .mainpage {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .main-container {
   height: 400px;
   background-color: var(--secondary-color);
+}
+.content {
+  height: 84vh;
+  position: relative;
 }
 
 .center-position,
@@ -20,4 +23,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.FLOATING {
+  height: inherit;
 }
